@@ -1,0 +1,10 @@
+<?php
+session_start();
+
+require_once 'algorithm_sjf.php';
+
+$result = runSJF($_POST['processes']);
+
+echo "<pre>";
+print_r($result);
+echo "</pre>";
